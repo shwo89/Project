@@ -1,0 +1,20 @@
+git init 			
+-- 将该文件夹变成Git可以管理的仓库，也可以右键 Git Bash Here文件夹；
+
+git add . 			
+-- 将所有文件提交到暂存区，可以探测到新增、修改、删除；
+
+git commit -m “版本说明”	
+-- 将暂存区提交到本地仓库；
+
+git pull 			
+-- rebase origin master(合并本地与远程仓库)
+
+git remote add origin git@github.com:shwo89/Project.git		
+-- 关联本地仓库与远程仓库
+
+git push origin master
+-- 本地仓库推送至远程仓库
+
+git push -u origin master
+-- u这个参数是指，将master分支的所有内容都提交，第一次关联之后后边你再提交就可以不用这个参数了
